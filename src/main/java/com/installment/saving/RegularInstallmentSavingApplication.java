@@ -9,5 +9,4 @@ public class RegularInstallmentSavingApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RegularInstallmentSavingApplication.class, args);
 	}
-
 }

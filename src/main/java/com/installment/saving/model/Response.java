@@ -9,6 +9,11 @@ public class Response {
         //empty
     }
 
+    public Response(String status, String message) {
+        this.status = status;
+        this.message = message;
+    }
+
     public Response(String status, String message, Object data) {
         this.status = status;
         this.message = message;

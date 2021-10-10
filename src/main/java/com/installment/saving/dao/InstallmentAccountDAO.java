@@ -1,5 +1,6 @@
 package com.installment.saving.dao;
 
+import com.installment.saving.exception.GeneralException;
 import com.installment.saving.mapper.InstallmentAccountMapper;
 import com.installment.saving.model.InstallmentAccount;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class InstallmentAccountDAO extends JdbcDaoSupport {
         }
         catch (Exception ex)
         {
-            throw null;
+            throw new GeneralException(ex.toString());
         }
     }
 
